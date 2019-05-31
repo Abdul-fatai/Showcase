@@ -1,0 +1,697 @@
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+/*Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+} 
+
+
+/* header */
+header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #35424a;
+	color: #ffffff;
+	padding-top: 20px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+
+header li{
+	list-style: none;
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding {
+	float: left;
+} 
+
+header #branding h1 {
+	margin: 0;
+} 
+
+header nav {
+	float: right;
+	margin-top: 20px;
+}
+
+header .highlight, header .current a{
+	color: #e8491d;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+
+/* Showcase */
+
+#showcase {
+	margin-top: 50px;
+	min-height: 400px;
+	background: url('../post_imgs/show.jpeg')no-repeat 0 ;
+    background-size: cover;
+	text-align: center;
+	color: #ffffff;
+
+}
+
+#showcase h1{
+	margin-top: 100px;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+#showcase p{
+	font-size: 20px;
+	
+}
+
+/*NewsLetter*/
+
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background-color: #35424a;
+
+}
+
+#newsletter h3{
+	float: left;
+    font-size: 20px;
+    margin: 10px;
+
+}
+#newsletter h3 a{
+    background-color: #333;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px; 
+
+}
+
+#newsletter h3 a:hover{
+    background-color: black;
+
+}
+
+#newsletter form{
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+	padding: 4px;
+	height: 38px;
+	width: 250px;
+
+}
+
+button {
+    height: 38px;
+    background-color: #e8491d;
+    border: none;
+    padding: 0 20px 0 20px;
+    color: #ffffff;
+
+}
+
+button:hover {
+    background-color: #e8591d;
+}
+
+/*Post */
+
+.form {
+    margin-top: 150px;
+    margin-left: 22%;
+    border-radius: 5px;
+    background-color: #35424a;
+    padding: 30px;
+    width: 50%;
+    color: #ffffff;
+}
+
+.form h1{
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;;
+
+
+ }
+
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #e8491d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.form li {
+    list-style: none;
+    text-align: center;
+}
+.form li #signinsted {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333;
+    padding: 15px;
+
+} 
+
+.form li #signinsted:hover{
+ background-color: black;
+
+} 
+
+
+input[type=submit]:hover {
+    background-color: #e8591d;
+}
+
+/*Boxes*/
+
+div.img {
+	margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+/* The Image */
+div.img img {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+}
+
+/* Description of Image */
+div.desc {
+    width: 100%;
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+div.desc a{
+    text-decoration: none;
+    color: #333;
+}
+
+div.desc a:hover{
+    border-bottom: blue 2px solid; 
+    color: blue;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add Responsiveness */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+#edit {
+    float: left;
+    background-color: #333; 
+    text-decoration: none; 
+    color: #ffffff; 
+    padding: 8px;"
+}
+
+#edit:hover {
+    background-color: black;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Clear Floats */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+/*Pagnation */
+.pagnation{
+    margin-top: 1%;
+}
+
+.pagnation li{
+    float: left;
+    list-style: none;
+    display: inline;
+    margin: 5px;
+ 
+
+}
+
+.pagnation #pag{
+    
+
+}
+.pagnation a{
+    background-color: grey;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+
+}
+
+.pagnation a:hover{
+    background-color: #35424a;
+}
+
+
+
+/*About us*/
+#about-us {
+    width: 70%;
+    margin-top: 150px;
+    margin-left: 15%;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    background-color: #e6e6e6;
+    border: #cccccc 1px solid;
+}
+
+#about-us p{
+    font-size: 20px;
+}
+#about-us h1{
+    font-size: 30px;
+}
+
+/*Services */
+#services {
+    margin-top: 140px;
+}
+
+#services aside {
+    width: 50%;
+    background-color: #e6e6e6;
+    border: #cccccc 1px solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#services aside h1{
+    text-align: center;
+}
+
+/*Contact us*/
+
+#contact-us {
+    margin-top: 140px;
+
+}
+
+
+#contact-us aside {
+    width: 50%;
+    background-color: #e6e6e6;
+    border: #cccccc 1px solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#contact-us p {
+    font-size: 20px;
+}
+
+
+
+
+
+#article {
+    width: 70%;
+    margin-top: 150px;
+    margin-left: 15%;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    background-color: #e6e6e6;
+    border: #cccccc 1px solid;
+}
+
+#article {
+    font-size: 20px;
+}
+
+#article .article-img img{
+    margin-left: 130px;
+    width: 500px;
+    height: 450px;
+}
+
+#comment-display img{
+    float: left;
+    width: 50px;
+    height: 40px;
+    border-radius: 70%;
+}
+
+#article textarea {
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+
+footer {
+    width: 100%;
+	padding: 20px;
+	margin-top: 20px;
+    border-top: 3px solid #35424a;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media queries*/
+
+/* Responsive Columns */
+@media only screen and (max-width: 768px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    .modal-content {
+        width: 100%;
+    }
+
+    header #branding,
+    header nav,
+    header nav li, #newsletter h3,
+    #newsletter form{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 10px;
+    }
+
+    #showcase h1{
+        font-size: 40px;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"]{
+        width: 100%;
+    }
+
+    .pagnation{
+    margin-top: 1%;
+}
+
+.pagnation li{
+    float: left;
+    list-style: none;
+    display: inline;
+ 
+
+}
+
+.pagnation #pag{
+    float: right;
+
+}
+
+.pagnation a{
+    background-color: grey;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+
+}
+
+.pagnation a:hover{
+    background-color: #35424a;
+}
+
+
+/*Post */
+
+.form {
+    margin-top: 200px;
+    margin-left: 0;
+    border-radius: 5px;
+    background-color: #35424a;
+    padding: 30px;
+    width: 100%;
+    color: #ffffff;
+}
+
+/*About us*/
+#about-us {
+    width: 90%;
+    margin-top: 200px;
+    margin-left: 20px;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    background-color: #e6e6e6;
+    border: #cccccc 1px solid;
+}
+
+/*Services */
+#services {
+    margin-top: 200px;
+}
+
+#services aside {
+    width: 100%;
+    background-color: #e6e6e6;
+    border: #cccccc 1px solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#services aside h1{
+    text-align: center;
+}
+
+/*Contact us*/
+
+#contact-us {
+    margin-top: 200px;
+
+}
+
+
+#contact-us aside {
+    width: 100%;
+    background-color: #e6e6e6;
+    border: #cccccc 1px solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#contact-us p {
+    font-size: 18px;
+}
+
+#article {
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 1%;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    background-color: #e6e6e6;
+    border: #cccccc 1px solid;
+}
+
+#article h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+#article .article-img img{
+    margin-left: 0;
+    width: 300px;
+    height: 250px;
+}
+
+
+#comment-display img{
+    float: left;
+    width: 50px;
+    height: 40px;
+    border-radius: 70%;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 3px solid #35424a;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
